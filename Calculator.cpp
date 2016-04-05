@@ -151,10 +151,10 @@ void standardcalc(){
 	cin>>calcFuncStand;
 
 	//Methods to call the appropriate calculator method
-	if(calcFuncStand.compare("+")){addition();}
-	if(calcFuncStand.compare("-")){subtraction();}
-	if(calcFuncStand.compare("*")){multiplication();}
-	if(canlcFuncStand.compare("/") {division();}
+	if(calcFuncStand.compare("+")) {addition();}
+	if(calcFuncStand.compare("-")) {subtraction();}
+	if(calcFuncStand.compare("*")) {multiplication();}
+	if(canlcFuncStand.compare("/")) {division();}
 }
 
 /*The function to handle the scientific calculator option,
@@ -199,11 +199,11 @@ void main() {
 		cin>>calcFunc;
 		cout<<endl;
 
-		if(calcFunc.tolower().compare("Standard")){
+		if(calcFunc.tolower().compare("Standard")) {
 			standardcalc();
 		}
 
-		if(calcFunc.tolower().compare("Scientific")){
+		if(calcFunc.tolower().compare("Scientific")) {
 			scientificcalc();
 		}
 	}
