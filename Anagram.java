@@ -39,6 +39,9 @@ public class Anagram {
 		
 		//Print the resultant list
 		System.out.println(list.toString());
+		
+		//Close the scaner
+		c.close();
 	}
 	
 	//Logic for checking for an anagram

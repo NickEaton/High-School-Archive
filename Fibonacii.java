@@ -11,7 +11,11 @@ public class Fibonacii {
 	
 	//Main tester mathod
 	public static void main(String[] args) {
+		
+		//Create the scanner
 		Scanner c = new Scanner(System.in);
+		
+		//Loop infinitely until user closes
 		while(true) {
 			System.out.print("Enter the desired Fibonacii number (0-based index): ");
 			int goal = c.nextInt();

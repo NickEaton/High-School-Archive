@@ -8,7 +8,11 @@ public class FullReverse {
 	
 	//Main loop
 	public static void main(String[] args) {
+		
+		//Create the Scanner object
 		Scanner c = new Scanner(System.in);
+		
+		//Loop until user exits
 		while(true) {
 			System.out.print("Enter something to be reversed: ");
 			String in = c.nextLine();

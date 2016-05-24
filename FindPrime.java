@@ -9,7 +9,11 @@ public class FindPrime {
 	
 	//Main method to continually find the desired prime
 	public static void main(String[] args) {
+		
+		//Create the scanner
 		Scanner c = new Scanner(System.in);
+		
+		//Loop until user quites the program
 		while(true) {
 			System.out.print("Enter the desired prime #: ");
 			int prime = c.nextInt();
@@ -23,10 +27,14 @@ public class FindPrime {
 		int nPrime = index+3;
 		int fCount = 0;
 		int count = 0;
+		
 		if(index==0) {return 2;}
 		if(index==1) {return 3;}
+		
 		index+=3;
+		
 		while(nPrime>0) {
+			
 			if(isPrime(fCount)) {
 				primes[count]=fCount;
 				nPrime--;
@@ -34,6 +42,7 @@ public class FindPrime {
 			}
 			fCount++;
 		}
+		
 		return primes[index-1];
 	}
 	
@@ -42,6 +51,7 @@ public class FindPrime {
 		for(int i=2; i<test; i++) {
 			if(test%i==0) {return false;}
 		}
+		
 		return true;
 	}
 }

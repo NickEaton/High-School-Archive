@@ -6,7 +6,11 @@ public class Substring {
 	
 	//Main test method
 	public static void main(String[] args) {
+		
+		//Create the Scanner
 		Scanner c = new Scanner(System.in);
+		
+		//Loop until user exits
 		while(true) {
 			System.out.print("Enter the String to scan: ");
 			String in = c.nextLine();
